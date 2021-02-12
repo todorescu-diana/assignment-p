@@ -1,0 +1,1 @@
+/*document.getElementsByClassName('menuLogo')[0].className += ' menuLogoClicked '*/

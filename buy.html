@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+ <body>
+
+    <div class="header"> 
+        <h1>Shop&User Management App</h1>
+    </div>
+
+    <div id="big">
+
+                <ul id="flex-container"> 
+                    <li class="element flexmenu">
+                            <ul id="menu">
+                                
+                                <li id="LogoID" class="menuLogo element" onclick=" $('.users').toggle('hide') ; $('.buy').toggle('hide'); $('#LogoID').toggleClass('menuLogoClicked menuLogo');">
+                                     
+                                </li>
+                                <li class="users element">
+                                    <a href="#">
+                                        Users
+                                    </a>
+                                <li>
+                                <li class="buy element">
+                                    <a href="#">
+                                        Buy
+                                    </a>
+                                </li>
+
+                            </ul>
+                    </li>                                             <!--end of menu container-->                   
+                    <li class="content element">
+                          
+                            <div>
+
+                                <ul class="tablecontent">
+
+                                    <li class="element">
+
+                                        <table>
+
+                                            <tr>
+                                                <th>
+                                                    Product
+                                                </th>
+                                                    
+                                                <th>
+                                                    Code
+                                                </th>
+                                                    
+                                                <th>
+                                                    Available
+                                                </th>
+
+                                                <th>
+                                                    Price
+                                                </th>
+
+                                                <th>
+                                                    5 Star Rating
+                                                </th>
+
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>
+                                                    Leaf Rake
+                                                </td>
+                                                    
+                                                <td>
+                                                    gdn 0011
+                                                </td>
+                                                    
+                                                <td>
+                                                    March 19, 2019
+                                                </td>
+
+                                                <td>
+                                                    $19.95
+                                                </td>
+
+                                                <td>
+                                                    4
+                                                </td>
+
+                                                <td class="bubble">
+                                                    <button class="bubbleButton details">
+                                                        Details
+                                                    </button>
+                                                </td>
+
+                                                <td class="bubble">
+                                                    <button class="bubbleButton delete">
+                                                        Delete
+                                                    </button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Garden Cart
+                                                </td>
+                                                    
+                                                <td>
+                                                    gdn 0023
+                                                </td>
+                                                    
+                                                <td>
+                                                    March 18, 2019
+                                                </td>
+
+                                                <td>
+                                                    $32.99
+                                                </td>
+
+                                                <td>
+                                                    5
+                                                </td>
+
+                                                <td class="bubble">
+                                                    <button class="bubbleButton details">
+                                                        Details
+                                                    </button>
+                                                </td>
+
+                                                <td class="bubble">
+                                                    <button class="bubbleButton delete">
+                                                        Delete
+                                                    </button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Hammer
+                                                </td>
+                                                    
+                                                <td>
+                                                    tbx 0048
+                                                </td>
+                                                    
+                                                <td>
+                                                    May 21, 2019
+                                                </td>
+
+                                                <td>
+                                                    $8.90
+                                                </td>
+
+                                                <td>
+                                                    3
+                                                </td>
+
+                                                <td class="bubble">
+                                                    <button class="bubbleButton details">
+                                                        Details
+                                                    </button>
+                                                </td>
+
+                                                <td class="bubble">
+                                                    <button class="bubbleButton delete">
+                                                        Delete
+                                                    </button>
+                                                </td>
+
+                                            </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        Saw
+                                                    </td>
+                                                        
+                                                    <td>
+                                                        tbx 0022
+                                                    </td>
+                                                        
+                                                    <td>
+                                                        May 15, 2019
+                                                    </td>
+    
+                                                    <td>
+                                                        $11.55
+                                                    </td>
+    
+                                                    <td>
+                                                        4
+                                                    </td>
+
+                                                    <td class="bubble">
+                                                        <button class="bubbleButton details">
+                                                            Details
+                                                        </button>
+                                                    </td>
+    
+                                                    <td class="bubble">
+                                                        <button class="bubbleButton delete">
+                                                            Delete
+                                                        </button>
+                                                    </td>
+    
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        Video Game Controller
+                                                    </td>
+                                                        
+                                                    <td>
+                                                        gmg 0042
+                                                    </td>
+                                                        
+                                                    <td>
+                                                        October 15, 2018
+                                                    </td>
+    
+                                                    <td>
+                                                        $35.95
+                                                    </td>
+    
+                                                    <td>
+                                                        3
+                                                    </td>
+
+                                                    <td class="bubble">
+                                                        <button class="bubbleButton details">
+                                                            Details
+                                                        </button>
+                                                    </td>
+    
+                                                    <td class="bubble">
+                                                        <button class="bubbleButton delete">
+                                                            Delete
+                                                        </button>
+                                                    </td>
+    
+                                                </tr>
+
+                                        </table>
+
+                                        <div class="contentDiv">
+                                            <p class="one">
+                                                Leaf Rake
+                                            </p>
+                                            <p class="two">
+                                                gdn 0011
+                                            </p>
+                                            <p class="three">
+                                                March 19, 2019
+                                            </p>
+                                            <p class="four">
+                                                $19.95
+                                            </p>
+                                            <p class="five">
+                                                4
+                                            </p>
+
+                                            <button class="divEdit">
+                                                
+                                            </button>
+
+                                            <button class="divDelete">
+
+                                            </button>
+                                        </div>
+
+                                        <div class="contentDiv">
+                                            <p class="one">
+                                                Leaf Rake
+                                            </p>
+                                            <p class="two">
+                                                gdn 0011
+                                            </p>
+                                            <p class="three">
+                                                March 19, 2019
+                                            </p>
+                                            <p class="four">
+                                                $19.95
+                                            </p>
+                                            <p class="five">
+                                                4
+                                            </p>
+                                            <button class="divEdit">
+                                                
+                                            </button>
+
+                                            <button class="divDelete">
+
+                                            </button>
+                                        </div>
+
+                                        <div class="contentDiv">
+                                            <p class="one">
+                                                Leaf Rake
+                                            </p>
+                                            <p class="two">
+                                                gdn 0011
+                                            </p>
+                                            <p class="three">
+                                                March 19, 2019
+                                            </p>
+                                            <p class="four">
+                                                $19.95
+                                            </p>
+                                            <p class="five">
+                                                4
+                                            </p>
+                                            <button class="divEdit">
+                                                
+                                            </button>
+
+                                            <button class="divDelete">
+
+                                            </button>
+                                        </div>
+
+                                        <div class="contentDiv">
+                                            <p class="one">
+                                                Leaf Rake
+                                            </p>
+                                            <p class="two">
+                                                gdn 0011
+                                            </p>
+                                            <p class="three">
+                                                March 19, 2019
+                                            </p>
+                                            <p class="four">
+                                                $19.95
+                                            </p>
+                                            <p class="five">
+                                                4
+                                            </p>
+                                            <button class="divEdit">
+                                                
+                                            </button>
+
+                                            <button class="divDelete">
+
+                                            </button>
+                                        </div>
+
+                                        <div class="contentDiv">
+                                            <p class="one">
+                                                Leaf Rake
+                                            </p>
+                                            <p class="two">
+                                                gdn 0011
+                                            </p>
+                                            <p class="three">
+                                                March 19, 2019
+                                            </p>
+                                            <p class="four">
+                                                $19.95
+                                            </p>
+                                            <p class="five">
+                                                4
+                                            </p>
+                                            <button class="divEdit">
+                                                
+                                            </button>
+
+                                            <button class="divDelete">
+
+                                            </button>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </ul>
+
+                        </div>
+
+                    </li>                                             <!--end of content container-->
+                </ul>                       <!--end of big flexbox container-->
+
+    </div>
+
+ </body>
+
+</html>
