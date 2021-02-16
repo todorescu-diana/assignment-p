@@ -13,6 +13,22 @@
 
  <body>
 
+    <template id="rowModel">
+        <tr>
+            <td class="tdclass">Leaf Rake</td>
+            <td class="tdclass">gdn 0011</td>
+            <td class="tdclass">March 19,2019</td>
+            <td class="tdclass">$19.95</td>
+            <td class="tdclass">4</td>
+            <td class="bubble">
+                <button class="bubbleButton details"> Details </button>
+            </td>
+            <td class="bubble">
+                <button class="bubbleButton delete"> Delete </button>
+            </td>
+        </tr>
+    </template>
+
     <div class="header"> 
         <h1>Shop&User Management App</h1>
     </div>
@@ -43,13 +59,13 @@
                           
                             <div>
 
-                                <ul class="tablecontent">
+                                <ul id="tableID" class="tablecontent">
 
                                     <li class="element">
 
                                         <table>
 
-                                            <tr>
+                                            <thead>
                                                 <th>
                                                     Product
                                                 </th>
@@ -70,8 +86,10 @@
                                                     5 Star Rating
                                                 </th>
 
-                                            </tr>
+                                            </thead>
                                             
+                                        <tbody>
+                                            <!--
                                             <tr>
                                                 <td>
                                                     Leaf Rake
@@ -246,6 +264,8 @@
                                                     </td>
     
                                                 </tr>
+                                        -->
+                                        </tbody>
 
                                         </table>
 
@@ -277,16 +297,66 @@
 
                                         <div class="contentDiv">
                                             <p class="one">
-                                                Leaf Rake
+                                                Garden Cart
                                             </p>
                                             <p class="two">
-                                                gdn 0011
+                                                gdn 0023
                                             </p>
                                             <p class="three">
-                                                March 19, 2019
+                                                March 18, 2019
                                             </p>
                                             <p class="four">
-                                                $19.95
+                                                $32.99
+                                            </p>
+                                            <p class="five">
+                                                5
+                                            </p>
+                                            <button class="divEdit">
+                                                
+                                            </button>
+
+                                            <button class="divDelete">
+
+                                            </button>
+                                        </div>
+
+                                        <div class="contentDiv">
+                                            <p class="one">
+                                                Hammer
+                                            </p>
+                                            <p class="two">
+                                                tbx 0048
+                                            </p>
+                                            <p class="three">
+                                                May 21, 2019
+                                            </p>
+                                            <p class="four">
+                                                $8.90
+                                            </p>
+                                            <p class="five">
+                                                3
+                                            </p>
+                                            <button class="divEdit">
+                                                
+                                            </button>
+
+                                            <button class="divDelete">
+
+                                            </button>
+                                        </div>
+
+                                        <div class="contentDiv">
+                                            <p class="one">
+                                                Saw
+                                            </p>
+                                            <p class="two">
+                                                tbx 0022
+                                            </p>
+                                            <p class="three">
+                                                May 15, 2019
+                                            </p>
+                                            <p class="four">
+                                                $11.55
                                             </p>
                                             <p class="five">
                                                 4
@@ -302,69 +372,19 @@
 
                                         <div class="contentDiv">
                                             <p class="one">
-                                                Leaf Rake
+                                                Video Game Controller
                                             </p>
                                             <p class="two">
-                                                gdn 0011
+                                                gmg 0042
                                             </p>
                                             <p class="three">
-                                                March 19, 2019
+                                                October 15, 2018
                                             </p>
                                             <p class="four">
-                                                $19.95
+                                                $35.95
                                             </p>
                                             <p class="five">
-                                                4
-                                            </p>
-                                            <button class="divEdit">
-                                                
-                                            </button>
-
-                                            <button class="divDelete">
-
-                                            </button>
-                                        </div>
-
-                                        <div class="contentDiv">
-                                            <p class="one">
-                                                Leaf Rake
-                                            </p>
-                                            <p class="two">
-                                                gdn 0011
-                                            </p>
-                                            <p class="three">
-                                                March 19, 2019
-                                            </p>
-                                            <p class="four">
-                                                $19.95
-                                            </p>
-                                            <p class="five">
-                                                4
-                                            </p>
-                                            <button class="divEdit">
-                                                
-                                            </button>
-
-                                            <button class="divDelete">
-
-                                            </button>
-                                        </div>
-
-                                        <div class="contentDiv">
-                                            <p class="one">
-                                                Leaf Rake
-                                            </p>
-                                            <p class="two">
-                                                gdn 0011
-                                            </p>
-                                            <p class="three">
-                                                March 19, 2019
-                                            </p>
-                                            <p class="four">
-                                                $19.95
-                                            </p>
-                                            <p class="five">
-                                                4
+                                                3
                                             </p>
                                             <button class="divEdit">
                                                 
