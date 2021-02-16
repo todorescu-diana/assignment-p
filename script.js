@@ -49,6 +49,15 @@ window.onload = function(){
             cloneRow.querySelectorAll("tr .tdclass")[3].innerHTML = o.productPrice;
             cloneRow.querySelectorAll("tr .tdclass")[4].innerHTML = o.productRating;
 
+            let btnDelete = cloneRow.querySelector("button.delete");
+
+            btnDelete.onclick = function (){
+                let index = data.indexOf(o);
+                data.splice(index, 1);
+                console.log(data);
+                document.getElementsByTagName("tr")[index+1].remove();
+            }
+
             return cloneRow;
         })
             .forEach ( function (cloneRow) { return table.appendChild(cloneRow); } );

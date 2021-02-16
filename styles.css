@@ -30,6 +30,7 @@
 
     .menuLogo, .users, .buy{
         float:left;
+        padding-bottom: 10px !important;
     }
 
     .contentDiv{
@@ -302,4 +303,21 @@ tr:nth-of-type(odd){background-color:rgb(206, 218, 240);}
     padding-right:60px;
     padding-top: 10px;
     padding-bottom:10px;
+}
+
+button:focus{
+    border:none;
+    outline:none;
+}
+
+.menuLogo{
+    padding-bottom: 10px;
+}
+
+li.users.element{
+    padding-bottom: 10px;
+}
+
+li.buy.element{
+    padding-bottom: 20px;
 }
