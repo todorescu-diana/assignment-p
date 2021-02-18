@@ -1,3 +1,6 @@
+// MILESTONE 1
+
+
 let data = [
     {
         productName: "Leaf Rake" ,
