@@ -41,7 +41,7 @@ let data = [
 
 function dataCollect(){
 
-    if( $( window ).width() <= 500 ){
+    //if( $( window ).width() <= 500 ){
         let element = document.createElement('li');
         element.classList.add("element");
         let unorderedList = document.getElementById("tableID");
@@ -69,9 +69,9 @@ function dataCollect(){
                 .forEach ( function (cloneDiv) { return element.appendChild(cloneDiv); } );
 
         console.log("small");
-    }
+    //}
 
-    else{
+    //else{
         let table = document.querySelector("#tableID tbody");
         let rowTemp = document.getElementById("rowModel");
         data 
@@ -96,15 +96,15 @@ function dataCollect(){
         })
             .forEach ( function (cloneRow) { return table.appendChild(cloneRow); } );
             console.log("big");
-    }
+    //}
     }
 
-let resizeTimer;
+/*let resizeTimer;
 let oldState;
-let newState;
+let newState;*/
 
 window.onload = function(){
-    let oldWidth = window.innerWidth;
+    /*let oldWidth = window.innerWidth;
     if(oldWidth <= 500)
     {
         oldState = "small";
@@ -112,9 +112,9 @@ window.onload = function(){
     else
     {
         oldState = "big";
-    }
+    }*/
     dataCollect();
-    $(window).one('resize',function() {
+   /* $(window).one('resize',function() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () {
             let newWidth = window.innerWidth;
@@ -136,5 +136,5 @@ window.onload = function(){
             oldState = newState;
             console.log(`old: ${oldState}`);
         }, 200);
-      });
+      });*/
 }

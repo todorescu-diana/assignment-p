@@ -11,8 +11,8 @@
           })
           .then( data => {
               
-            if( $( window ).width() <= 500 )
-            {
+            //if( $( window ).width() <= 500 )
+            //{
                 let element = document.createElement('li');
                 element.classList.add("element");
                 let unorderedList = document.getElementById("tableID");
@@ -48,10 +48,10 @@
                 return cloneDiv;
             })
                 .forEach ( function (cloneDiv) { return element.appendChild(cloneDiv); } );
-            }
+            //}
             
-            else
-            {
+            //else
+            //{
                 console.log(data);
                 let table = document.querySelector("#tableID tbody");
                 let rowTemp = document.getElementById("rowModel");
@@ -86,7 +86,7 @@
             return cloneRow;
         })
                     .forEach ( function (cloneRow) { return table.appendChild(cloneRow); } );
-            }
+            //}
 
 
           }).catch( error => {
@@ -95,7 +95,7 @@
         }
         
 window.onload = function(){
-    let oldWidth = window.innerWidth;
+    /*let oldWidth = window.innerWidth;
     if(oldWidth <= 500)
     {
         oldState = "small";
@@ -103,9 +103,9 @@ window.onload = function(){
     else
     {
     oldState = "big";
-    }
+    }*/
     fetchData();
-    $(window).one('resize',function() {
+    /*$(window).one('resize',function() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () {
         let newWidth = window.innerWidth;
@@ -127,5 +127,5 @@ window.onload = function(){
         oldState = newState;
         console.log(`old: ${oldState}`);
         }, 200);
-        });
+        });*/
     }
